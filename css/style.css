@@ -1,0 +1,153 @@
+@import url('normalize.css');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+	box-sizing: border-box;
+}
+/* mise en place de variables */
+:root {
+	--bordeaux: #3E0018;
+	--rouge: #88002D;
+	--vin: #885C7E;
+	--blanc: #fff;
+}
+a {
+	text-decoration: none;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+}
+ul {
+	list-style-type: none;
+}
+#header {
+	background-color: var(--bordeaux);
+	color: var(--blanc);
+}
+#header a {
+	color: var(--blanc);
+	transition: all 0.4s;
+}
+.menu,
+#bottles {
+	width: 95%;
+	margin: 0 auto 20px;
+}
+#bottles img {
+	width: 100%
+}
+.bottle {
+	margin-bottom: 40px;
+	color: var(--bordeaux);
+}
+.bottle>div:first-child {
+	width: 15%;
+}
+.bottle>div:nth-child(2) {
+	width: 30%;
+}
+.bottle>div:nth-child(3) {
+	width: 10%;
+}
+.bottle>div:nth-child(4) {
+	width: 40%;
+}
+.bottle>div:last-child {
+	width: 5%;
+}
+#bottles h2 {
+	font-size: 16px;
+    margin: 0;
+    text-transform: uppercase;
+}
+#bottles p {
+    margin: 0;
+}
+#bottles .desc {
+   font-weight: 700;
+}
+#bottles .fas{
+   font-size: 20px;
+   margin: 10px 0;
+}
+.flex {
+	display: flex;
+}
+.f-between {
+	justify-content: space-between;
+	align-items: center;
+}
+.flex-center {
+	justify-content: center;
+	align-items: center;
+}
+.f-column {
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.add_bottle>div {
+	margin-right: 10px;
+}
+.c-pointer {
+	cursor:  pointer;
+}
+.icon_add {
+	width:  35px;
+	height: 35px;
+	color: var(--blanc);
+	border-radius: 50px;
+	background-color: var(--vin);
+	transition: all 0.4s;
+}
+.icon_add:hover {
+	color: var(--vin);
+	background-color: var(--blanc);
+}
+.add_bottle .fa-plus {
+	font-size: 30px;
+}
+.disconnect {
+	background-color: var(--vin);
+	border-radius: 10px;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	border: 2px solid var(--vin);
+	transition: all 0.4s;
+}
+.disconnect:hover {
+	background-color: var(--blanc);
+}
+#header .disconnect:hover a {
+	color: var(--vin);
+}
+#bottles .fas.c-pointer {
+	transition: all 0.4s;
+	color: var(--vin);
+}
+#bottles .fas.c-pointer:hover {
+	color: var(--bordeaux);
+}
+/************************************************/
+/****************** NAVIGATION ******************/
+/************************************************/
+#navigation {
+	color: var(--bordeaux);
+	width: 150px;
+	margin: 0 auto 80px;
+}
+#navigation .active {
+	cursor: default;
+	color: var(--blanc);
+	padding: 5px 10px;
+	background-color: var(--vin);
+	border-radius: 5px;
+	transition:  all 0.4s;
+}
+#navigation .active:hover {
+	background-color: var(--bordeaux);
+}
+#navigation .no_click {
+	color: var(--vin);
+	cursor: not-allowed;
+}
